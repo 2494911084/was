@@ -14,4 +14,6 @@ Route::group([
 
     $router->get('/', 'HomeController@index');
 
+    ## 文章分类
+    $router->resource('category', 'CategoryController');
 });
