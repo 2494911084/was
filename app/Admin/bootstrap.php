@@ -32,7 +32,7 @@ Admin::menu(function (Menu $menu) {
             'id'            => '1', // 此id只要保证当前的数组中是唯一的即可
             'title'         => '站点设置',
             'icon'          => 'fa-file-text-o',
-            'uri'           => '',
+            'uri'           => 'setting',
             'parent_id'     => 0,
             'permission_id' => '', // 与权限绑定
             'roles'         => '', // 与角色绑定

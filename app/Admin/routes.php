@@ -18,4 +18,6 @@ Route::group([
     $router->resource('category', 'CategoryController');
     ## 文章
     $router->resource('art', 'ArtController');
+    ## 站点设置
+    $router->get('setting', 'SettingController@setting');
 });
