@@ -22,4 +22,6 @@ Route::group([
     $router->get('setting', 'SettingController@setting');
     ## 前台菜单
     $router->resource('site-menu', 'SiteMenuController');
+    ## 首页设置
+    $router->get('index-setting', 'SettingController@index_setting');
 });
