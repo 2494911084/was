@@ -16,4 +16,6 @@ Route::group([
 
     ## 文章分类
     $router->resource('category', 'CategoryController');
+    ## 文章
+    $router->resource('art', 'ArtController');
 });

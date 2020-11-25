@@ -10,4 +10,9 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     use HasDateTimeFormatter, ModelTree;
+
+    public function arts()
+    {
+        return $this->hasMany(Art::class);
+    }
 }
