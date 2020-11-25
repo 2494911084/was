@@ -31,7 +31,7 @@ Admin::menu(function (Menu $menu) {
         [
             'id'            => '1', // 此id只要保证当前的数组中是唯一的即可
             'title'         => '站点设置',
-            'icon'          => 'fa-file-text-o',
+            'icon'          => 'fa-asterisk',
             'uri'           => 'setting',
             'parent_id'     => 0,
             'permission_id' => '', // 与权限绑定
@@ -40,7 +40,7 @@ Admin::menu(function (Menu $menu) {
         [
             'id'            => '2', // 此id只要保证当前的数组中是唯一的即可
             'title'         => '菜单设置',
-            'icon'          => 'fa-file-text-o',
+            'icon'          => 'fa-align-center',
             'uri'           => 'site-menu',
             'parent_id'     => 0,
             'permission_id' => '', // 与权限绑定
@@ -49,7 +49,7 @@ Admin::menu(function (Menu $menu) {
         [
             'id'            => '3', // 此id只要保证当前的数组中是唯一的即可
             'title'         => '首页设置',
-            'icon'          => 'fa-file-text-o',
+            'icon'          => 'fa-chrome',
             'uri'           => 'index-setting',
             'parent_id'     => 0,
             'permission_id' => '', // 与权限绑定
@@ -58,7 +58,7 @@ Admin::menu(function (Menu $menu) {
         [
             'id'            => '4', // 此id只要保证当前的数组中是唯一的即可
             'title'         => '分类',
-            'icon'          => 'fa-file-text-o',
+            'icon'          => 'fa-bookmark',
             'uri'           => 'category',
             'parent_id'     => 0,
             'permission_id' => '', // 与权限绑定
@@ -67,7 +67,7 @@ Admin::menu(function (Menu $menu) {
         [
             'id'            => '5', // 此id只要保证当前的数组中是唯一的即可
             'title'         => '文章',
-            'icon'          => 'fa-file-text-o',
+            'icon'          => 'fa-book',
             'uri'           => 'art',
             'parent_id'     => 0,
             'permission_id' => '', // 与权限绑定
