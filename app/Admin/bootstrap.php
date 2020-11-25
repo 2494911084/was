@@ -41,7 +41,7 @@ Admin::menu(function (Menu $menu) {
             'id'            => '2', // 此id只要保证当前的数组中是唯一的即可
             'title'         => '菜单设置',
             'icon'          => 'fa-file-text-o',
-            'uri'           => '',
+            'uri'           => 'site-menu',
             'parent_id'     => 0,
             'permission_id' => '', // 与权限绑定
             'roles'         => '', // 与角色绑定

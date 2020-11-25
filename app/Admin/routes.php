@@ -20,4 +20,6 @@ Route::group([
     $router->resource('art', 'ArtController');
     ## 站点设置
     $router->get('setting', 'SettingController@setting');
+    ## 前台菜单
+    $router->resource('site-menu', 'SiteMenuController');
 });
