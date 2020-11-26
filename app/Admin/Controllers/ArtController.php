@@ -27,6 +27,7 @@ class ArtController extends AdminController
             $grid->column('view_count');
             $grid->column('cre_time');
             $grid->column('xxly');
+            $grid->column('is_tuijian')->switch();
             $grid->column('created_at');
             $grid->column('updated_at')->sortable();
 
@@ -53,7 +54,7 @@ class ArtController extends AdminController
             $show->field('view_count');
             $show->field('cre_time');
             $show->field('xxly');
-            $show->field('image');
+            $show->field('is_tuijian');
             $show->field('content');
             $show->field('created_at');
             $show->field('updated_at');
@@ -75,6 +76,7 @@ class ArtController extends AdminController
             $form->number('view_count')->default(0);
             $form->date('cre_time');
             $form->text('xxly');
+            $form->switch('is_tuijian');
             $form->image('image');
             $form->editor('content')->required();
 

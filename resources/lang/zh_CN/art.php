@@ -1,4 +1,4 @@
-<?php 
+<?php
 return [
     'labels' => [
         'Art' => '文章',
@@ -10,6 +10,7 @@ return [
         'view_count' => '浏览量',
         'cre_time' => '发布时间',
         'xxly' => '信息来源',
+        'is_tuijian' => '推荐',
         'image' => '主图',
         'content' => '内容',
     ],

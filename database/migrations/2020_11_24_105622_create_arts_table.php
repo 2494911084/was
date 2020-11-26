@@ -17,6 +17,7 @@ class CreateArtsTable extends Migration
             $table->id();
             $table->string('title')->comment('标题');
             $table->integer('category_id')->unsigned()->default(0)->comment('分类');
+            $table->integer('is_tuijian')->unsigned()->default(0)->comment('推荐');
             $table->integer('view_count')->unsigned()->default(0)->comment('浏览量');
             $table->string('cre_time')->nullable()->default(null)->comment('发布时间');
             $table->string('xxly')->nullable()->default(null)->comment('信息来源');
