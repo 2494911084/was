@@ -17,3 +17,21 @@ mix.js('resources/js/app.js', 'public/js')
         require('tailwindcss'),
     ])
     .webpackConfig(require('./webpack.config'));
+
+mix.styles([
+    'resources/css/reset.css',
+    'resources/css/public.css',
+    'resources/css/index.css',
+    'resources/css/font-awesome.min.css',
+    'resources/css/owl.carousel.min.css',
+    'resources/css/ionicons.min.css',
+    'resources/css/gallery.css',
+    'resources/css/vit-gallery.css',
+], 'public/css/all.css');
+
+mix.js('resources/js/jquery.min.js', 'public/js')
+mix.js('resources/js/jquery.SuperSlide.2.1.1.js', 'public/js')
+mix.js('resources/js/myjs.js', 'public/js')
+mix.js('resources/js/owl.carousel.min.js', 'public/js')
+mix.js('resources/js/sky.js', 'public/js')
+mix.js('resources/js/jquery.littlelightbox.js', 'public/js')

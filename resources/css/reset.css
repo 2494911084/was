@@ -1,0 +1,193 @@
+
+
+body,h1,h2,h3,h4,h5,h6,div,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+    margin:0;
+    padding:0;
+}
+body,button,input,select,textarea {
+    font:12px/1.5 tahoma,arial,\5b8b\4f53
+}
+body {
+    _overflow:auto;
+    _height:100%;
+    margin:0 auto;
+    font-family:"Microsoft YaHei","微软雅黑","Microsoft JhengHei","宋体";
+    background: url(http://www.lywas.com.cn/templets/moban/images/bg.gif) repeat;
+}
+html {
+    _overflow:hidden
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%
+}
+address,cite,dfn,em,var {
+    font-style:normal
+}
+code,kbd,pre,samp {
+    font-family:courier new,courier,monospace
+}
+small {
+    font-size:12px
+}
+ul,ol,li,dl,dt,dd {
+    list-style:none
+}
+sup {
+    vertical-align:text-top
+}
+sub {
+    vertical-align:text-bottom
+}
+legend {
+    color:#000
+}
+fieldset,img {
+    border:0
+}
+button,input,select,textarea {
+    font:12px/1.5 tahoma,arial,sans-serif;
+    vertical-align:middle;
+    cursor:pointer
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+.clearfix {
+}
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+}
+.cls {
+}
+.cls::after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+/*a*/
+
+a {
+    text-decoration:none;
+    color:#555;
+}
+a:hover {
+    color:#cb0101;
+}
+/*title*/
+h1 {
+    font-size:50px;
+}
+h2 {
+    font-size:16px;
+}
+h3 {
+    font-size:30px;
+}
+h4 {
+    font-size:14px;
+}
+h5 {
+    font-size:12px;
+}
+h6 {
+    font-size3:9px;
+}
+/*float*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.wrap1200 {
+    width: 1400px;
+    margin: 0px auto;
+}
+
+.white {
+    background: #fff;
+    display:table;
+}
+.pt10 {
+    padding-top: 10px
+}
+.pt20 {
+    padding-top: 20px
+}
+.pt30 {
+    padding-top: 30px
+}
+.pt40 {
+    padding-top: 40px
+}
+.pt50 {
+    padding-top: 50px
+}
+.pt60 {
+    padding-top: 60px
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt30 {
+    margin-top: 30px;
+}
+.mt40 {
+    margin-top: 40px;
+}
+.mt50 {
+    margin-top: 50px;
+}
+.mt60 {
+    margin-top: 60px;
+}
+.pb10 {
+    padding-bottom: 10px;
+}
+.pb20 {
+    padding-bottom: 20px;
+}
+.pb30 {
+    padding-bottom: 30px;
+}
+.pb40 {
+    padding-bottom: 40px;
+}
+.pb50 {
+    padding-bottom: 50px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+i, em {
+
+    font-style: normal;
+}
+.f18{font-size: 18px; font-weight: bold}
+.w1400{width:1580px; height:auto; overflow:hidden; margin:0 auto;}
+.wal {
+    margin: auto;
+    width: 1400px;}
+::-moz-selection{background:#2abbb7; color:#fff;}
+::selection {background:#2abbb7; color:#fff;}
+b{color: #c80003}

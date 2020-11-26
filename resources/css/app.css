@@ -1,3 +1,11 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+/* @import 'reset';
+@import 'public';
+@import 'index';
+@import 'font-awesome.min';
+@import 'owl.carousel.min';
+@import 'ionicons.min';
+@import 'gallery';
+@import 'vit-gallery'; */
