@@ -5,6 +5,7 @@ namespace App\Admin\Forms;
 use Dcat\Admin\Widgets\Form;
 use Illuminate\Support\Facades\DB;
 use App\Models\Category;
+use Illuminate\Support\Facades\Cache;
 
 class IndexSetting extends Form
 {
@@ -18,15 +19,17 @@ class IndexSetting extends Form
     public function handle(array $input)
     {
         try {
+            $input = json_encode($input);
             if (DB::table('admin_settings')->where('slug', 'web_site_index_setting')->exists()) {
-                DB::table('admin_settings')->where('slug', 'web_site_index_setting')->update(['value' => json_encode($input)]);
+                DB::table('admin_settings')->where('slug', 'web_site_index_setting')->update(['value' => $input]);
             } else {
-                DB::table('admin_settings')->insert(['slug' => 'web_site_index_setting', 'value' => json_encode($input)]);
+                DB::table('admin_settings')->insert(['slug' => 'web_site_index_setting', 'value' => $input]);
             }
         } catch (\Throwable $th) {
             return $this->response()->error('更新失败.');
         }
-
+        $input = DB::table('admin_settings')->where('slug', 'web_site_index_setting')->first();
+        Cache::forever('was_web_site_index_setting', $input->value);
         return $this
 				->response()
 				->success('更新成功.')

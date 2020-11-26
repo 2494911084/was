@@ -4,6 +4,7 @@ namespace App\Admin\Forms;
 
 use Dcat\Admin\Widgets\Form;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Cache;
 
 class Setting extends Form
 {
@@ -18,14 +19,19 @@ class Setting extends Form
     {
         // dump($input);
         try {
+            $input = json_encode($input);
             if (DB::table('admin_settings')->where('slug', 'web_site_setting')->exists()) {
-                DB::table('admin_settings')->where('slug', 'web_site_setting')->update(['value' => json_encode($input)]);
+                DB::table('admin_settings')->where('slug', 'web_site_setting')->update(['value' => $input]);
             } else {
-                DB::table('admin_settings')->insert(['slug' => 'web_site_setting', 'value' => json_encode($input)]);
+                DB::table('admin_settings')->insert(['slug' => 'web_site_setting', 'value' => $input]);
             }
         } catch (\Throwable $th) {
             return $this->response()->error('更新失败.');
         }
+        $input = DB::table('admin_settings')->where('slug', 'web_site_setting')->first();
+        Cache::forever('was_web_site_setting', $input->value);
+
+        ## 加入缓存
 
         return $this
 				->response()
