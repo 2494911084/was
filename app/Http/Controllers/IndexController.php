@@ -33,7 +33,7 @@ class IndexController extends Controller
         if ($agent->isMobile() || $agent->isTablet()) {
             return view('m.index', compact('shouye', 'arts', 'arts3', 'cate', 'arts4p', 'cate2', 'arts5p', 'cate3', 'arts6p'));
         } else {
-            return view('index', compact('shouye', 'arts', 'arts3', 'cate', 'arts4p', 'cate2', 'arts5p', 'cate3', 'arts6p'));
+            return view('p.index', compact('shouye', 'arts', 'arts3', 'cate', 'arts4p', 'cate2', 'arts5p', 'cate3', 'arts6p'));
         }
     }
 }
