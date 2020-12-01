@@ -9,3 +9,11 @@
 @import 'ionicons.min';
 @import 'gallery';
 @import 'vit-gallery'; */
+
+.fadeInUp.animated .tab1.first{
+    margin-left: 450px;
+}
+
+.ml2 {
+    margin-right: 25px;
+}

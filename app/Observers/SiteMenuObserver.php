@@ -5,6 +5,7 @@ namespace App\Observers;
 use App\Models\SiteMenu;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
+use App\Models\Category;
 
 class SiteMenuObserver
 {
@@ -18,6 +19,10 @@ class SiteMenuObserver
     {
         // $date = DB::table('site_menu')->get();
         $date = $siteMenu->with('category')->get();
+        foreach ($date as $key => $value) {
+            $siteMenu = Category::where('parent_id', $value['category_id'])->get();
+            $date[$key]['subMenu'] = $siteMenu;
+        }
         Cache::forever('was_site_menu', $date);
     }
     /**

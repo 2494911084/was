@@ -904,13 +904,13 @@
 .dl-xiang .item img{padding:10%;}
 /*玩转万安山*/
 
-.page5{ background: url(../images/rmjq.jpg) no-repeat top center; padding-top: 0px;background-size: cover;min-width: 1580px;}
+.page5{ padding-top: 0px;background-size: cover;min-width: 1580px;}
 #page5 .w1400{ height: 830px; position: relative }
-#page5 li.class1{background: url(../images/wz1.png) no-repeat top center; width: 418px; height: 418px; top: 119px; left: 150px; padding: 38px 90px;}
-#page5 li.class2{background: url(../images/wz3.png) no-repeat top center; width: 418px; height: 418px; top: 159px; left: 588px; padding: 77px 115px;}
-#page5 li.class3{background: url(../images/wz4.png) no-repeat top center; width: 418px; height: 418px; top: 119px; right: 139px; padding: 38px 90px;}
-#page5 li.class4{background: url(../images/wz2.png) no-repeat top center; width: 418px; height: 418px; top: 403px; left: 348px;padding: 57px 70px;}
-#page5 li.class5{background: url(../images/wz5.png) no-repeat top center; width: 418px; height: 418px; top: 395px; right: 336px;padding: 64px 70px;}
+#page5 li.class1{ width: 418px; height: 418px; top: 119px; left: 150px; padding: 38px 90px;}
+#page5 li.class2{ width: 418px; height: 418px; top: 159px; left: 588px; padding: 77px 115px;}
+#page5 li.class3{ width: 418px; height: 418px; top: 119px; right: 139px; padding: 38px 90px;}
+#page5 li.class4{ width: 418px; height: 418px; top: 403px; left: 348px;padding: 57px 70px;}
+#page5 li.class5{ width: 418px; height: 418px; top: 395px; right: 336px;padding: 64px 70px;}
 #page5 li .box{ position: relative; z-index: 9; text-align: center;}
 #page5 li{ position: absolute; box-sizing: border-box; color: #FFF;}
 #page5 li .tit{ font-size: 40px; text-align: center; color: #FFF; margin-bottom: 30px; line-height: 108px; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.25) }

@@ -16,7 +16,7 @@
                             <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/mj19.jpg" class="img-responsive" alt="" title="凭栏仰圣">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="凭栏仰圣">
                                         <div class="ga-img-tit">凭栏仰圣</div>
                                     </div>
                                     <div class="gallery-box-main " title="凭栏仰圣">
@@ -29,7 +29,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/mj14.jpg" class="img-responsive" alt="" title="鹰嘴岩">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="鹰嘴岩">
                                         <div class="ga-img-tit">鹰嘴岩</div>
                                     </div>
                                     <div class="gallery-box-main " title="鹰嘴岩">
@@ -42,7 +42,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/mj12.jpg" class="img-responsive" alt="" title="呐喊喷泉">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="呐喊喷泉">
                                         <div class="ga-img-tit">呐喊喷泉</div>
                                     </div>
                                     <div class="gallery-box-main " title="呐喊喷泉">
@@ -55,7 +55,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/mj11.jpg" class="img-responsive" alt="" title="玻璃吊桥">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="玻璃吊桥">
                                         <div class="ga-img-tit">玻璃吊桥</div>
                                     </div>
                                     <div class="gallery-box-main " title="玻璃吊桥">
@@ -68,7 +68,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/mj7.jpg" class="img-responsive" alt="" title="玉虚观象">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="玉虚观象">
                                         <div class="ga-img-tit">玉虚观象</div>
                                     </div>
                                     <div class="gallery-box-main " title="玉虚观象">
@@ -81,7 +81,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/mj6.jpg" class="img-responsive" alt="" title="滑翔伞飞行营地">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="滑翔伞飞行营地">
                                         <div class="ga-img-tit">滑翔伞飞行营地</div>
                                     </div>
                                     <div class="gallery-box-main " title="滑翔伞飞行营地">
@@ -94,7 +94,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/mj5.jpg" class="img-responsive" alt="" title=".观伊揽胜">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title=".观伊揽胜">
                                         <div class="ga-img-tit">.观伊揽胜</div>
                                     </div>
                                     <div class="gallery-box-main " title=".观伊揽胜">
@@ -107,7 +107,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/mj2.jpg" class="img-responsive" alt="" title="灵台仙踪">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="灵台仙踪">
                                         <div class="ga-img-tit">灵台仙踪</div>
                                     </div>
                                     <div class="gallery-box-main " title="灵台仙踪">
@@ -130,7 +130,7 @@
                             <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/hd8.jpg" class="img-responsive" alt="" title="帐篷露营">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="帐篷露营">
                                         <div class="ga-img-tit">帐篷露营</div>
                                     </div>
                                     <div class="gallery-box-main " title="帐篷露营">
@@ -143,7 +143,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/hd9.jpg" class="img-responsive" alt="" title="蒙古演艺">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="蒙古演艺">
                                         <div class="ga-img-tit">蒙古演艺</div>
                                     </div>
                                     <div class="gallery-box-main " title="蒙古演艺">
@@ -156,7 +156,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/hd7.jpg" class="img-responsive" alt="" title="素质拓展训练">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="素质拓展训练">
                                         <div class="ga-img-tit">素质拓展训练</div>
                                     </div>
                                     <div class="gallery-box-main " title="素质拓展训练">
@@ -169,7 +169,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/hd5.jpg" class="img-responsive" alt="" title="夜间蒙古包">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="夜间蒙古包">
                                         <div class="ga-img-tit">夜间蒙古包</div>
                                     </div>
                                     <div class="gallery-box-main " title="夜间蒙古包">
@@ -182,7 +182,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/hd4.jpg" class="img-responsive" alt="" title="大锅台">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="大锅台">
                                         <div class="ga-img-tit">大锅台</div>
                                     </div>
                                     <div class="gallery-box-main " title="大锅台">
@@ -195,7 +195,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/hd3.jpg" class="img-responsive" alt="" title="农事体验">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="农事体验">
                                         <div class="ga-img-tit">农事体验</div>
                                     </div>
                                     <div class="gallery-box-main " title="农事体验">
@@ -208,7 +208,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/hd6.jpg" class="img-responsive" alt="" title="烤羊腿">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="烤羊腿">
                                         <div class="ga-img-tit">烤羊腿</div>
                                     </div>
                                     <div class="gallery-box-main " title="烤羊腿">
@@ -221,7 +221,7 @@
 <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
                                     <div class="box-img">
-                                        <img src="uploads/userup/hd1.jpg" class="img-responsive" alt="" title="马术">
+                                        <img src="{{ config('app.url') }}/uploads/{{ json_decode(Cache::get('was_web_site_setting'), true)['dyh_wechat'] }}" class="img-responsive" alt="" title="马术">
                                         <div class="ga-img-tit">马术</div>
                                     </div>
                                     <div class="gallery-box-main " title="马术">
