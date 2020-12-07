@@ -5,7 +5,7 @@
             <li class="nLi"><a href="{{ url('/') }}" title="网站首页">网站首页</a></li>
             @foreach (\Cache::get('was_site_menu') as $item)
             {{-- {{ dd($item) }} --}}
-                <li class="nLi"><a href="{{ url('/') }}" title="万安山印象">{{ $item->name }}</a>
+                <li class="nLi"><a href="{{ url('categories', $item->id) }}" title="{{ $item->name }}">{{ $item->name }}</a>
                 </li>
             @endforeach
         </div>

@@ -15,7 +15,7 @@
                         <ul class="fix">
                             @foreach ($arts4p[0]->arts as $item)
                             <li class="fl">
-                                <a href="{{ url('/') }}" title="{{ $item['title'] }}">
+                                <a href="{{ url('arts', $item['id']) }}" title="{{ $item['title'] }}">
                                     <div class="item picfd">
                                         <div class="pic"><img src="{{ config('app.url') }}/uploads/{{ $item['image'] }}" alt="" class="db"></div>
                                         <div class="title">{{ $item['title'] }}</div>
@@ -27,7 +27,7 @@
 
     </ul>
                     </div>
-                    <div class="nr2"><a href="{{ url('/') }}" title="">查看更多景区公告</a></div>
+                    {{-- <div class="nr2"><a href="{{ url('/') }}" title="">查看更多</a></div> --}}
                 </div>
 
             <div class="tab_nr1" style="display: none;">
@@ -35,7 +35,7 @@
                 <ul class="fix">
                 @foreach ($arts4p[1]->arts as $item)
                 <li class="fl">
-                    <a href="{{ url('/') }}" title="{{ $item['title'] }}">
+                    <a href="{{ url('arts', $item['id']) }}" title="{{ $item['title'] }}">
                         <div class="item picfd">
                             <div class="pic"><img src="{{ config('app.url') }}/uploads/{{ $item['image'] }}" alt="" class="db"></div>
                             <div class="title">{{ $item['title'] }}</div>
@@ -46,7 +46,7 @@
                 @endforeach
                 </ul>
             </div>
-            <div class="nr2"><a href="{{ url('/') }}" title="">查看更多景区新闻</a></div>
+            {{-- <div class="nr2"><a href="{{ url('/') }}" title="">查看更多</a></div> --}}
         </div>
 
         <div class="tab_nr1" style="display: none;">
@@ -54,7 +54,7 @@
                 <ul class="fix">
                     @foreach ($arts4p[2]->arts as $item)
                     <li class="fl">
-                        <a href="{{ url('/') }}" title="{{ $item['title'] }}">
+                        <a href="{{ url('arts', $item['id']) }}" title="{{ $item['title'] }}">
                             <div class="item picfd">
                                 <div class="pic"><img src="{{ config('app.url') }}/uploads/{{ $item['image'] }}" alt="" class="db"></div>
                                 <div class="title">{{ $item['title'] }}</div>
@@ -65,7 +65,7 @@
                     @endforeach
                 </ul>
             </div>
-            <div class="nr2"><a href="{{ url('/') }}" title="">查看更多游记攻略</a></div>
+            {{-- <div class="nr2"><a href="{{ url('/') }}" title="">查看更多</a></div> --}}
         </div>
         </div>
     </div>

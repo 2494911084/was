@@ -1,5 +1,5 @@
 
-@foreach ($arts3 as $key => $item)
+@foreach ($arts3p as $key => $item)
 
 
 <li class="class{{ $key+1 }}"  style="background: url({{ config('app.url') }}/uploads/{{ $item['image'] }}) no-repeat top center;width: 418px; height: 418px;">

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\ArtsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +17,9 @@ use App\Http\Controllers\IndexController;
 
 Route::get('/', [IndexController::class, 'index']);
 
-Route::resource('Category', 'CategoriesController');
+Route::get('categories/{category}', [CategoriesController::class, 'show']);
+
+Route::get('arts/{art}', [ArtsController::class, 'show']);
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');

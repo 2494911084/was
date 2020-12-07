@@ -26,7 +26,7 @@
 <section class="section page5">
     <div id="page5" style="background: url('/images/rmjq.jpg') no-repeat top center; padding-top: 0px;background-size: cover;min-width: 1580px;">
         <div class="w1400 relative">
-            <div class="sy_inco"><span>玩转万安山</span></div>
+            <div class="sy_inco"><span>{{ $cate5['title'] }}</span></div>
                 @include('p.index.wzwas')
         </div>
     </div>

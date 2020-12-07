@@ -29,6 +29,7 @@ class Setting extends Form
             return $this->response()->error('更新失败.');
         }
         $input = DB::table('admin_settings')->where('slug', 'web_site_setting')->first();
+
         Cache::forever('was_web_site_setting', $input->value);
 
         ## 加入缓存

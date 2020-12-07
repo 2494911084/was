@@ -22,6 +22,7 @@ mix.styles([
     'resources/css/reset.css',
     'resources/css/public.css',
     'resources/css/index.css',
+    'resources/css/style.css',
     'resources/css/font-awesome.min.css',
     'resources/css/owl.carousel.min.css',
     'resources/css/ionicons.min.css',
@@ -35,3 +36,4 @@ mix.js('resources/js/myjs.js', 'public/js')
 mix.js('resources/js/owl.carousel.min.js', 'public/js')
 mix.js('resources/js/sky.js', 'public/js')
 mix.js('resources/js/jquery.littlelightbox.js', 'public/js')
+mix.js('resources/js/jquery.fancybox-1.3.4.pack.js', 'public/js')
