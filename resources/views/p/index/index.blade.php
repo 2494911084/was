@@ -121,7 +121,7 @@
             </li>
             @endif
 
-            @if ($im2 = isset(json_decode(Cache::get('was_web_site_index_setting'), true)['field3_category']['childCate'][2]))
+            @if ($im2 = json_decode(Cache::get('was_web_site_index_setting'), true)['field3_category']['childCate'][2])
             <li class="class3">
 
                 <div class="box">
@@ -139,7 +139,7 @@
             </li>
             @endif
 
-            @if ($im3 = isset(json_decode(Cache::get('was_web_site_index_setting'), true)['field3_category']['childCate'][3]))
+            @if ($im3 = json_decode(Cache::get('was_web_site_index_setting'), true)['field3_category']['childCate'][3])
             <li class="class4">
 
                 <div class="box">
@@ -157,7 +157,7 @@
             </li>
             @endif
 
-            @if ($im4 = isset(json_decode(Cache::get('was_web_site_index_setting'), true)['field3_category']['childCate'][4]))
+            @if ($im4 = json_decode(Cache::get('was_web_site_index_setting'), true)['field3_category']['childCate'][4])
             <li class="class5">
 
                 <div class="box">
