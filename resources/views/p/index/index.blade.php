@@ -207,6 +207,10 @@
                             </a>
                         </li>
 
+                        @if ($key = 3)
+                            @break
+                        @endif
+
                         @endforeach
                     </ul>
                 </div>
@@ -239,7 +243,7 @@
                 <div id="Hotel_{{ $key }}" class="tab-pane fade">
                     <div class="product ">
                         <div class="row">
-                            @foreach ($item['tj_arts'] as $art)
+                            @foreach ($item['tj_arts'] as $key => $art)
 
                             <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                                 <div class="wrap-box">
@@ -254,7 +258,9 @@
                                     </div>
                                 </div>
                             </div>
-
+                            @if ($key = 3)
+                                @break
+                            @endif
                             @endforeach
                         </div>
                     </div>
