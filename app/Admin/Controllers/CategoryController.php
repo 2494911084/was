@@ -11,6 +11,8 @@ use Dcat\Admin\Layout\Row;
 use Dcat\Admin\Layout\Content;
 use Dcat\Admin\Tree;
 use Dcat\Admin\Http\Controllers\AdminController;
+use Symfony\Component\HttpFoundation\Request;
+use Illuminate\Support\Facades\DB;
 
 class CategoryController extends AdminController
 {
@@ -128,5 +130,12 @@ class CategoryController extends AdminController
                 }
             });
         });
+    }
+
+    public function relCategory(Request $request)
+    {
+        $provinceId = $request->get('q');
+
+        return CategoryModel::where('parent_id', $provinceId)->get(['id', DB::raw('title as text')]);
     }
 }

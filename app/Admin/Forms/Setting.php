@@ -49,9 +49,10 @@ class Setting extends Form
         $this->image('logo')->required();
         $this->mobile('kefu_mobile', '客服电话')->required();
         $this->mobile('tous_mobile', '投诉电话')->required();
-        $this->mobile('baoxiu_mobile', '保修电话')->required();
+        $this->mobile('baoxiu_mobile', '救援电话')->required();
         $this->image('dyh_wechat', '订阅号')->required();
         $this->image('fwh_wechat', '服务号')->required();
+        $this->text('beianxx', '备案信息')->required();
     }
 
     /**

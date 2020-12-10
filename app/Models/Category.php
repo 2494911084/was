@@ -15,4 +15,9 @@ class Category extends Model
     {
         return $this->hasMany(Art::class);
     }
+
+    public function tj_arts()
+    {
+        return $this->hasMany(Art::class)->where('is_tuijian', 1);
+    }
 }

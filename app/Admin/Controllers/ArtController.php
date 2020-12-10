@@ -28,6 +28,7 @@ class ArtController extends AdminController
             $grid->column('cre_time');
             $grid->column('xxly');
             $grid->column('is_tuijian')->switch();
+            $grid->column('is_huandengpian')->switch();
             $grid->column('created_at');
             $grid->column('updated_at')->sortable();
 
@@ -55,6 +56,7 @@ class ArtController extends AdminController
             $show->field('cre_time');
             $show->field('xxly');
             $show->field('is_tuijian');
+            $show->field('is_huandengpian');
             $show->field('content');
             $show->field('created_at');
             $show->field('updated_at');
@@ -71,12 +73,16 @@ class ArtController extends AdminController
         return Form::make(new Art(), function (Form $form) {
             $form->display('id');
             $form->text('title')->required();
-            $form->select('category_id')->options(Category::all()->pluck('title', 'id'))->required();
+
+            $form->select('category_id_sub','上级分类')->options(Category::where('parent_id', 0)->get()->pluck('title', 'id'))->load('category_id', 'rel_category');
+            $form->select('category_id')->required();
 
             $form->number('view_count')->default(0);
             $form->date('cre_time');
             $form->text('xxly');
             $form->switch('is_tuijian');
+            $form->switch('is_huandengpian');
+            $form->text('jiesao','幻灯片介绍');
             $form->image('image');
             $form->editor('content')->required();
 
@@ -84,7 +90,7 @@ class ArtController extends AdminController
             $form->display('updated_at');
 
             // 删除用户提交的数据
-            $form->deleteInput('category_p_id');
+            // $form->deleteInput('category_id_sub');
 
         });
     }

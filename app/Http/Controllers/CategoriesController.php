@@ -10,38 +10,18 @@ class CategoriesController extends Controller
 {
     public function show(Category $category)
     {
-        // 1.父级分类
-        // 2.子级分类
-        // 3.锁定的分类
-        // 输入父级 锁定的分类为第一个子级
-
-        if ($category->type == 0) {
-            $parCate = $category;
-            $subCate = Category::where('parent_id', $parCate->id)->with('arts')->get();
-            $category = $subCate[0];
+        ## 判断传来的分类是否是一级分类
+        if ($category->parent_id == 0) {
+            $childCate = Category::where('parent_id', $category->id)->with('tj_arts')->get();
+            $mr_cate = Category::with('arts')->find($childCate[0]['id']);
         } else {
-            $parCate = Category::find($category->parent_id);
-            $subCate = Category::where('parent_id', $parCate->id)->with('arts')->get();
-            $category = $category->load('arts');
+            $mr_cate = Category::with('arts')->find($category['id']);
+            $category = Category::find($category['parent_id']);
+            $childCate = Category::where('parent_id', $category->id)->with('tj_arts')->get();
         }
-        switch ($category->type) {
-            case '4':
-                $n = 16;
-                break;
-            case '2':
-                $n = 10;
-                break;
-            case '3':
-                $n = 8;
-                break;
-        }
-        if ($category->type == 1) {
-            $arts = Art::where('category_id', $category->id)->get();
-        } else {
-            $arts = Art::where('category_id', $category->id)->paginate($n);
-        }
-
-        return view('p.arts.index', compact('category', 'parCate', 'subCate', 'arts'));
+        $arts = Art::where('category_id', $mr_cate['id'])->paginate(2);
+        // dd($mr_cate->arts);
+        return view('p.index.art', compact('category', 'childCate', 'mr_cate', 'arts'));
 
     }
 }

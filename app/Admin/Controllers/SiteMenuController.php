@@ -19,9 +19,8 @@ class SiteMenuController extends AdminController
     protected function grid()
     {
         return Grid::make(new SiteMenu('category'), function (Grid $grid) {
-            $grid->model()->orderBy('order', 'desc');
+            $grid->model()->orderBy('order');
             $grid->column('id')->sortable();
-            $grid->column('name');
             $grid->column('category.title', '绑定分类');
             $grid->column('order');
             $grid->column('created_at');
@@ -45,7 +44,6 @@ class SiteMenuController extends AdminController
     {
         return Show::make($id, new SiteMenu(), function (Show $show) {
             $show->field('id');
-            $show->field('name');
             $show->field('category_id');
             $show->field('created_at');
             $show->field('updated_at');
@@ -61,7 +59,6 @@ class SiteMenuController extends AdminController
     {
         return Form::make(new SiteMenu(), function (Form $form) {
             $form->display('id');
-            $form->text('name')->required();
             $form->select('category_id')->options(Category::where('parent_id',0)->get()->pluck('title', 'id'))->required();
             $form->number('order')->default(0)->required();
             $form->display('created_at');

@@ -1,6 +1,5 @@
-<div class="cttitle explaintl">{{ $arts??$arts[0]['title'] }}</div>
+<div class="cttitle explaintl">{{ ($mr_cate->arts)[0]['title'] }}</div>
 <div class="articlect" id="zoomcon">
-
-{!! $arts??$arts[0]['content'] !!}
+    {!! ($mr_cate->arts)[0]['content'] !!}
 
 </div>

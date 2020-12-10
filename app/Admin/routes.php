@@ -24,4 +24,9 @@ Route::group([
     $router->resource('site-menu', 'SiteMenuController');
     ## 首页设置
     $router->get('index-setting', 'SettingController@index_setting');
+
+
+
+    ## 二级分类联动查询
+    $router->get('rel_category','CategoryController@relCategory');
 });

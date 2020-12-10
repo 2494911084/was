@@ -15,7 +15,6 @@ class CreateSiteMenuTable extends Migration
     {
         Schema::create('site_menu', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->comment('名称');
             $table->integer('category_id')->unsigned()->comment('绑定分类');
             $table->integer('order')->unsigned()->nullable()->default(0)->comment('排序');
             $table->timestamps();

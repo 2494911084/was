@@ -16,4 +16,9 @@ class Art extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function sub_category()
+    {
+        return $this->belongsTo(Category::class, 'category_id_sub');
+    }
 }

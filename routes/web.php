@@ -15,13 +15,8 @@ use App\Http\Controllers\ArtsController;
 |
 */
 
+
 Route::get('/', [IndexController::class, 'index']);
-
-Route::get('categories/{category}', [CategoriesController::class, 'show']);
-
-Route::get('arts/{art}', [ArtsController::class, 'show']);
-
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return view('dashboard');
-// })->name('dashboard');
+Route::get('/categories/{category}', [CategoriesController::class, 'show'])->name('category');
+Route::get('/arts/{art}', [ArtsController::class, 'show'])->name('art');
 

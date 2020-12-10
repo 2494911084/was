@@ -75,3 +75,4 @@ Admin::menu(function (Menu $menu) {
         ],
     ]);
 });
+

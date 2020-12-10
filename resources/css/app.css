@@ -15,5 +15,13 @@
 }
 
 .ml2 {
-    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
 }

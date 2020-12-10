@@ -11,6 +11,7 @@ return [
         'cre_time' => '发布时间',
         'xxly' => '信息来源',
         'is_tuijian' => '推荐',
+        'is_huandengpian' => '幻灯片',
         'image' => '主图',
         'content' => '内容',
     ],
