@@ -21,10 +21,10 @@
 
         <div class="clear"></div>
     </div>
-    <div class='mypage'>首页
-<a style='background:#2abbb7; color:#fff;'>1</a>
-<a href='#'>2</a>
-<a href='#'>下一页</a>
-<a href='#'>末页</a>
-</div>
+    <div style="text-align:center">
+        <!--分页写法-->
+        <div class="pull">
+          {{ $arts->render() }}
+        </div>
+      </div>
 </div>

@@ -8,6 +8,7 @@ use App\Observers\SiteMenuObserver;
 use App\Observers\ArtObserver;
 use App\Models\SiteMenu;
 use App\Models\Art;
+use Illuminate\Pagination\Paginator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -29,6 +30,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+
+        Paginator::useBootstrap();
 
         SiteMenu::observe(SiteMenuObserver::class);
         Art::observe(ArtObserver::class);

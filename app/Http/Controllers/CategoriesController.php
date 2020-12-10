@@ -19,7 +19,19 @@ class CategoriesController extends Controller
             $category = Category::find($category['parent_id']);
             $childCate = Category::where('parent_id', $category->id)->with('tj_arts')->get();
         }
-        $arts = Art::where('category_id', $mr_cate['id'])->paginate(2);
+        switch ($mr_cate['type']) {
+            case '3':
+                $page = 8;
+                break;
+            case '4':
+                $page = 16;
+                break;
+
+            default:
+                $page = 10;
+                break;
+        }
+        $arts = Art::where('category_id', $mr_cate['id'])->paginate($page);
         // dd($mr_cate->arts);
         return view('p.index.art', compact('category', 'childCate', 'mr_cate', 'arts'));
 

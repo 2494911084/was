@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="{{asset('css/fye.css')}}" rel="external nofollow" />
+
 <div class="listshow">
     <div class="qy_main8_1">
 
@@ -19,9 +21,11 @@
         </ul>
         <div class="clear"></div>
     </div>
-    <p>
-        {{ $arts->links() }}
-    </p>
-    <div class='mypage'><span class="pageinfo">共 <strong>1</strong>页<strong>10</strong>条记录</span>
+    <div style="text-align:center">
+        <!--分页写法-->
+        <div class="pull">
+          {{ $arts->render() }}
+        </div>
+      </div>
 </div>
 </div>

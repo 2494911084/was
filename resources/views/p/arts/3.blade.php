@@ -16,6 +16,11 @@
 
         <div class="clear"></div>
     </div>
-    <div class='mypage'><span class="pageinfo">共 <strong>1</strong>页<strong>5</strong>条记录</span>
+    <div style="text-align:center">
+        <!--分页写法-->
+        <div class="pull">
+          {{ $arts->render() }}
+        </div>
+      </div>
 </div>
 </div>
