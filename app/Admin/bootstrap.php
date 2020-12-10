@@ -57,8 +57,8 @@ Admin::menu(function (Menu $menu) {
         ],
         [
             'id'            => '4', // 此id只要保证当前的数组中是唯一的即可
-            'title'         => '分类',
-            'icon'          => 'fa-bookmark',
+            'title'         => '内容管理',
+            'icon'          => 'fa-book',
             'uri'           => 'category',
             'parent_id'     => 0,
             'permission_id' => '', // 与权限绑定
@@ -66,10 +66,19 @@ Admin::menu(function (Menu $menu) {
         ],
         [
             'id'            => '5', // 此id只要保证当前的数组中是唯一的即可
+            'title'         => '分类',
+            'icon'          => 'fa-bookmark',
+            'uri'           => 'category',
+            'parent_id'     => 4,
+            'permission_id' => '', // 与权限绑定
+            'roles'         => '', // 与角色绑定
+        ],
+        [
+            'id'            => '6', // 此id只要保证当前的数组中是唯一的即可
             'title'         => '文章',
             'icon'          => 'fa-book',
             'uri'           => 'art',
-            'parent_id'     => 0,
+            'parent_id'     => 4,
             'permission_id' => '', // 与权限绑定
             'roles'         => '', // 与角色绑定
         ],
